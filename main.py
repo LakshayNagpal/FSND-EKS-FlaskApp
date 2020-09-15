@@ -83,7 +83,7 @@ def auth():
 
 
 @APP.route('/contents', methods=['GET'])
-@require_jwt()
+@require_jwt
 def decode_jwt():
     """
     Check user token and return non-secret data
